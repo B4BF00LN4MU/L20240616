@@ -12,7 +12,14 @@ public:
 	virtual ~Actor();
 
 	int GetX();
+	int SetX();
+
 	int GetY();
+	int SetY();
+
+	int GetShape();
+	int SetShape();
+
 protected:
 	int X;
 	int Y;

@@ -2,6 +2,8 @@
 #include<vector>
 #include<string>
 #include<conio.h>
+
+#include "Actor.h"
 #include "Player.h"
 #include "Monster.h"
 #include "Goal.h"
@@ -50,8 +52,24 @@ int main()
 	MyActor.push_back(new Wall);
 	MyActor.push_back(new Goal);
 
-	MyActor[0]->GetX == MyActor[i]
-		Shape
+	for (int i = 1; i < 4; ++i)
+	{
+			if (MyActor[0]->GetX() == MyActor[i]->GetX() && MyActor[0]->GetY() == MyActor[i]->GetY())
+			{
+				switch (MyActor[i]->GetShape())
+				{
+				case 1:
+					cout << "ÀÌµûÀÌ¿ä"<<endl;
+					break;
+				case 2:
+					cout << "ÀÌ°ÍÀº º®ÀÌ´Ù \"²ô´ö\"" << endl;
+					break;
+				case 3:
+					cout << "µµÂ÷Äí" << endl;
+					break;
+				}
+			}
+	}
 
 
 		/*if (Map[Y][X] == MyPlayer[Y][X])
